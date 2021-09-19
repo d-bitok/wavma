@@ -1,0 +1,480 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Document title -->
+    <title>Contacts - Wavma Security Company LTD</title>
+    <link rel="icon" sizes="200x200" href="assets/images/wavma-security-co-fv.svg">
+    <!-- Stylesheets & Fonts -->
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i%7CRajdhani:400,600,700"
+        rel="stylesheet">
+    <!-- Plugins Stylesheets -->
+    <link rel="stylesheet" href="assets/css/loader/loaders.css">
+    <link rel="stylesheet" href="assets/css/font-awesome/font-awesome.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/aos/aos.css">
+    <link rel="stylesheet" href="assets/css/swiper/swiper.css">
+    <link rel="stylesheet" href="assets/css/lightgallery.min.css">
+    <!-- Template Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/contacts.css">
+    <!-- Responsive Stylesheet -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+    <!-- Loader Start -->
+    <!-- <div class="css-loader">
+        <div class="loader-inner line-scale d-flex align-items-center justify-content-center"></div>
+    </div> -->
+    <!-- Loader End --><!-- Header Start -->
+    <header class="position-relative w-100" style="padding: 20px;">
+        <div>
+            <a class="navbar-brands" href="index.html">
+                <img src="assets/images/test-clients-bg.png" alt="Wavma">
+            </a>
+        </div>
+        <div style="padding-left: 3rem; padding-right: 3rem;">
+            <div class="top-header d-none d-sm-flex justify-content-between align-items-center" style="max-height: 20px;">
+                <div></div>
+                <nav class="d-flex aic">
+                    <!-- <a href="#" class="login" data-toggle="modal" data-target="#AuthModal"><i class="fa fa-user" aria-hidden="true"></i>SignIn/Out</a> -->
+                        <a href="authentication.html" class="login"><i class="fa fa-user" aria-hidden="true"></i>SignIn</a>
+
+                    <ul class="nav social d-none d-md-flex">
+                        <li><a class="icon-hover" title="0791390755 / 0725777333" href="tel:+254791390755"><i
+                                    class="fa fa-phone" aria-hidden="true" style="color: rgb(8, 216, 36);"></i></a></li>
+                        <li><a class="icon-hover" title="info@wavmasecurity.co.ke" href="info@wavmasecurity.co.ke"><i
+                                    class="fa fa-envelope" aria-hidden="true" style="color: rgb(42, 118, 115);"></i></a>
+                        </li>
+                        <li><a href="https://www.facebook.com/WAVMA-Security-107395950782478/" target="_blank"><i
+                                    class="fa fa-facebook" style="color: rgb(120, 120, 213);"></i></a></li>
+                        <li><a href="https://www.instagram.com/wavmasecurity/"><i class="fa fa-instagram"
+                                    style="color: rgb(177, 123, 131);"></i></a></li>
+                        <li><a href="https://twitter.com/WavmaSecurity"><i class="fa fa-twitter"
+                                    style="color: aqua;"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+            <nav class="navbar navbar-expand-sm navbar-light">
+                <div class="group d-flex align-items-center">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                        aria-label="Toggle navigation"
+                        style="background-color: rgba(66, 46, 9, 0.23); border-radius: 5px;"><span
+                            class="navbar-toggler-icon my-2 mr-sm-2"></span></button>
+                    <a class="login-icon d-sm-none" href="authentication.html"
+                        style="color: rgb(125, 109, 81); padding-left: 2rem;"><i class="fa fa-user"></i></a>
+                </div>
+                <a class="search-icon d-none d-md-block" href="#"><i class="fa fa-search"></i></a>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent"
+                    style="margin-top: 15px;">
+                    <ul class="navbar-nav">
+    
+                        <li class="nav-item"><a
+                                style="color: rgb(66, 46, 9); padding-left: 1rem; padding-right: 1rem; font-weight: bold; font-size: large;"
+                                class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a
+                                style="color: rgb(66, 46, 9); padding-left: 1rem; padding-right: 1rem; font-weight: bold; font-size: large;"
+                                class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a
+                                style="color: rgb(66, 46, 9); padding-left: 1rem; padding-right: 1rem; font-weight: bold; font-size: large;"
+                                class="nav-link" href="services.html">Services</a></li>
+                        <li class="nav-item"><a
+                                style="color: rgb(66, 46, 9); padding-left: 1rem; padding-right: 1rem; font-weight: bold; font-size: large;"
+                                class="nav-link" href="contacts.html">Contacts</a></li>
+                    </ul>
+                    <form class="bg-white search-form search-form-style" method="get" id="searchform">
+                        <div class="input-group">
+                            <input style="left: 1rem; border: 0;" class="field form-control" id="s" name="s" type="text"
+                                placeholder="Search">
+                            <span class="input-group-btn">
+                                <input class="submit btn btn-warning" class="slider-carousel" id="searchsubmit"
+                                    name="submit" type="submit" value="Search">
+                            </span>
+                        </div>
+                    </form>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Header End -->
+    <!-- Authentication Modal Start -->
+    <section>
+        <div class="modal fade" id="AuthModal" tabindex="-1" role="dialog" aria-labelledby="AuthModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="container-fluid">
+                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true" style="color: brown;">&times;</span>
+                        </button>
+                        <div
+                            class="col-lg-10 col-md-10 offset-lg-1 offset-md-1 text-center mt-5 pb-4 text-dark input-border-deco">
+                            <h1 class="h1">Authentication</h1>
+                        </div>
+                        <div
+                            class="col-lg-10 col-md-10 offset-lg-1 offset-md-1 bg-white shadow mb-5 border border-warning input-border-deco border-rads">
+                            <div id="firebaseui-auth-container">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Authentication Modal End -->
+    <!-- Featured Start -->
+    <!-- Location Start -->
+    <section>
+        <div class="position-relative">
+            <img class="img-fluid d-md-block w-100" style="background-size: cover;" src="assets/images/guard-1.jpg" alt="">
+        </div>
+    </section>
+    <section class="featured">
+        <div class="container" style="background-color: rgba(236, 133, 22, 0.471); padding: 3rem; border-top-right-radius: 6rem; border-bottom-left-radius: 6rem;">
+            <div>
+                <div
+                    style="top: -8rem; background-color: rgba(130, 88, 12, 0.471); margin-top: 1rem; border-top-right-radius: 2rem; border-bottom-left-radius: 2rem;"
+                    data-aos="fade-left" data-aos-delay="400" data-aos-duration="800">
+                    <div class="iframe-container position-relative" style="top: -20px; height: 500px; width: auto; left: -25px; right: -35px;">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d994.9832608212428!2d39.71532572919573!3d-4.0340864620344865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x184013adb5d9209f%3A0x2b57591a412d3ae4!2sWavma%20Security%2C%20Ritz%20Apartment%2C%20Nyali.!5e0!3m2!1sen!2ske!4v1631621404145!5m2!1sen!2ske"
+                            width="100%" height="700" class="iframe-body" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+                <div data-aos="fade-right" data-aos-delay="400" data-aos-duration="800">
+                    <div class="title">
+                        <h3 class="title-primary">Contact Us</h3>
+                        <h1 class="title-blue">Send Us A Message</h1>
+                    </div>
+                    <div class="media-element d-flex justify-content-between">
+                        <h5>We are ready to help you secure your business and operations.
+                        <br>
+                        Please call us 0791390755 / 0717805990 / 0719837937
+                        <br>                        
+                        Email: info@wavmasecurity.co.ke / wavma.limited@gmail.com</h5>
+                        
+                    </div>
+                    <div class="media">
+                    <div class="modal-alert">Your Quote Has Been Sent Successfully! If You Wish to Request Another Quote, Please Continue.
+                    </div>
+                    <form class="modal-form needs-validation w-100" name="ModalForm" id="modalForm" novalidate>
+                        <ol>
+                            <li>
+                                <div class="form-group">
+                                    <label for="sender-name" class="col-form-label">Your Name (required) : </label>
+                                    <input required type="text" id="sender-name" class="form-control border-rad">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-group">
+                                    <label for="individual-institution" class="col-form-label">Individual or Institution </label>
+                                    <input type="text" id="individual-institution" class="form-control w-50 border-rad">
+                    
+                            </li>
+                            <li>
+                                <div class="form-group">
+                                    <label for="sender-telephone" class="col-form-label">Telephone (required) : </label>
+                                    <input required type="tel" id="sender-telephone" class="form-control border-rad">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-group">
+                                    <label for="sender-email" class="col-form-label">Email Address (required) : </label>
+                                    <input required type="email" id="sender-email" class="form-control border-rad">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-group">
+                                    <label for="sender-address" class="col-form-label">Location Address (required) : </label>
+                                    <input required type="text" id="sender-address" class="form-control border-rad">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-group">
+                                    <label for="guards-number" class="col-form-label">Number of Guards (required) : </label>
+                                    <input required type="number" id="guards-number" class="form-control w-50 border-rad">
+                                </div>
+                                <p>Type of Contract (Specify below if not Available)</p>
+                                <div class="form-check">
+                                    <label for="permanent" class="form-check-label">
+                                        Permanent Guards (long-term)
+                                    </label>
+                                    <input type="number" value="" id="permanent" checked class="form-control w-50 border-rad">
+                                </div>
+                                <div class="form-check">
+                                    <label for="events" class="form-check-label">
+                                        Events (short-term)
+                                    </label>
+                                    <input type="number" value="" id="events" class="form-control w-50 border-rad">
+                                </div>
+                                <div class="form-check">
+                                    <label for="escort" class="form-check-label">
+                                        Escort
+                                    </label>
+                                    <input type="number" value="" id="escort" class="form-control w-50 border-rad">
+                                </div>
+                                <div class="form-check">
+                                    <label for="k9" class="form-check-label">
+                                        K9 (Dog Section)
+                                    </label>
+                                    <input type="number" value="" id="k9" class="form-control w-50 border-rad">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-group">
+                                    <label for="message-text" class="col-form-label">Your Message : </label>
+                                    <textarea required id="message-text" class="form-control border-rad"></textarea>
+                                </div>
+                            </li>
+                        </ol>
+                        <div class="modal-footer">
+                            <button class="btn btn-success" type="submit">Send</button>
+                        </div>
+                    </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Location End -->
+    
+    <!-- Footer Start -->
+    <footer>
+        <!-- Widgets Start -->
+        <div class="footer-widgets" style="background-color: rgba(114, 78, 32, 0.981);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-xl-3">
+                        <div class="single-widget contact-widget" data-aos="fade-up" data-aos-delay="0">
+                            <h6 class="widget-tiltle">&nbsp;Location</h6>
+                            <p>WAVMA SECURITY COMPANY LIMITED (WSCL)
+                            </p>
+                            <div class="media">
+                                <i class="fa fa-map-marker"></i>
+                                <div class="media-body ml-3">
+                                    <h6>Address</h6>
+                                    Office Location <br>
+                                    Nyali, Ritz Complex <br>
+                                    Opposite Voyager Beach Hotel <br>
+                                    Zimani road
+                                </div>
+                            </div>
+                            <div class="media">
+                                <i class="fa fa-envelope-o"></i>
+                                <div class="media-body ml-3">
+                                    <h6>Have any questions?</h6>
+                                    <a href="mailto:info@wavmasecurity.co.ke">info@wavmasecurity.co.ke</a>
+                                </div>
+                            </div>
+                            <div class="media">
+                                <i class="fa fa-phone"></i>
+                                <div class="media-body ml-3">
+                                    <h6>Call us & Hire us</h6>
+                                    <a href="tel: +254717805990">0791390755</a>
+                                    <br>
+                                    <a href="tel: +254725777333">0725777333</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-3">
+                        <div class="single-widget twitter-widget" data-aos="fade-up" data-aos-delay="200">
+                            <h6 class="widget-tiltle">Fresh Tweets</h6>
+                            <a class="twitter-timeline" data-aos="fade-up" data-height="500" href="https://twitter.com/WavmaSecurity?ref_src=twsrc%5Etfw">Tweets by
+                                WavmaSecurity</a>
+                            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        
+                            <a href="https://twitter.com/intent/tweet?screen_name=WavmaSecurity&ref_src=twsrc%5Etfw" class="twitter-mention-button"
+                            data-show-count="false">Tweet to @WavmaSecurity</a>
+                        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-3 mt-2">
+                        <div class="single-widget tags-widget" data-aos="fade-up" data-aos-delay="800">
+                            <h6 class="widget-tiltle">Popular Tags</h6>
+                            <a href="#">Security</a>
+                            <a href="#">Wavma</a>
+                            <a href="#">WSCL</a>
+                            <a href="#">Nyali</a>
+                            <a href="#">Gaurd</a>
+                            <a href="#">Protect</a>
+                        </div>
+                        <div class="single-widget subscribe-widget" data-aos="fade-up" data-aos-delay="800">
+                            <h6 class="widget-tiltle">Subscribe</h6>
+                            <p>Sign up for our mailing list to get latest updates and offers</p>
+                            <form class="subscribe-email">
+                                <div class="input-group">
+                                    <input class="field form-control" name="subscribe" id="subscribeEmail" type="email" placeholder="Email Address">
+                                    <span class="input-group-btn">
+                                        <button type="submit" name="submit-mail"><i class="fa fa-check"></i></button>
+                                    </span>
+                                </div>
+                            </form>
+                            <p>We respect your privacy</p>
+                            <ul class="nav social-nav">
+                                <li><a href="https://www.facebook.com/WAVMA-Security-107395950782478/" target="_blank"><i
+                                            class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://www.instagram.com/wavmasecurity/"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="https://twitter.com/WavmaSecurity"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="info@wavmasecurity.co.ke"><i class="fa fa-envelope"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-3">
+                        <div class="single-title">
+                            <h6 class="widget-tiltle" style="color: white;" data-aos="fade-up">
+                                FACEBOOK
+                            </h6>
+                            <iframe data-aos="fade-up"
+                                src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fweb.facebook.com%2Fpages%2Fcategory%2FProduct-Service%2FWAVMA-Security-107395950782478%2F&tabs=timeline&width=360&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                                width="360" height="600" style="border:none;overflow:hidden; margin-top: 2rem; border-radius: 8px;" scrolling="no" frameborder="0" allowfullscreen="true"
+                                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                            </div>
+                    </div>
+                </div>
+                <!-- Testimonial and Clients Start -->
+                <section class="testimonial-and-clients">
+                    <div class="container"><div class="title text-center" data-aos="fade-up">
+                        <h2 class="title-primary">Our Clients</h2>
+                    </div>
+                        <div class="testimonials">
+                            <div class="swiper-container test-slider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide text-center">
+                                        <h1>Dhanjal Brothers Limited</h1>
+                                        <div class="row">
+                                            <div class="offset-lg-1 col-lg-10">
+                                                <div data-aos="fade-up" class="test-img" data-aos-delay="0" data-aos-offset="0"><img
+                                                    src="assets/images/dbl.png" alt="Testimonial 1"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide text-center">
+                                        <h1>Airport Center</h1>
+                                        <div class="row">
+                                            <div class="offset-lg-1 col-lg-10">
+                                                <div data-aos="fade-up" class="test-img" data-aos-delay="0" data-aos-offset="0"><img
+                                                    src="assets/images/airport.png" alt="Testimonial 1"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide text-center">
+                                        <h1>Tudor Seaview Private Company Limited</h1>
+                                        <div class="row">
+                                            <div class="offset-lg-1 col-lg-10">
+                                                <div data-aos="fade-up" class="test-img" data-aos-delay="0" data-aos-offset="0"><img
+                                                    src="assets/images/tudor.jpeg" alt="Testimonial 1"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide text-center">
+                                        <h1>DK Real Estates Limited</h1>
+                                        <div class="row">
+                                            <div class="offset-lg-1 col-lg-10">
+                                                <div data-aos="fade-up" class="test-img" data-aos-delay="0" data-aos-offset="0"><img
+                                                    src="assets/images/dk.jpg" alt="Testimonial 1"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="test-pagination"></div>
+                            </div>
+                        </div>
+                
+                    </div>
+                </section>
+                <!-- Testimonial and Clients End -->
+                <!-- FAQ Start -->
+                <section class="testimonial-and-clients">
+                    <div class="container"><div class="title text-center" data-aos="fade-up">
+                        <h2 class="title-primary">FAQ</h2>
+                    </div>
+                      <!-- <p>
+                          Most Frequently Asked Questions?
+                      </p> -->
+                
+                    </div>
+                </section>
+                <!-- FAQ End -->
+            </div>
+        </div>
+        <!-- Widgets End -->
+        <!-- Foot Note Start -->
+        <div class="foot-note">
+            <div class="container">
+                <div
+                    class="footer-content text-center text-lg-left d-lg-flex justify-content-between align-items-center">
+                    <p class="mb-0" data-aos="fade-right" data-aos-offset="0">&copy; Wavma Security 2021. All Rights Reserved
+                    </p>
+                    <p class="mb-0" data-aos="fade-left" data-aos-offset="0"><a href="#">Terms Of Use</a><a
+                            href="#">Privacy & Security
+                            Statement</a></p>
+                </div>
+            </div>
+        </div>
+        <!-- Foot Note End -->
+    </footer>
+    <!-- Footer End -->
+    <!--jQuery-->
+    <script src="assets/js/jquery-3.3.1.js"></script>
+    <!--Plugins-->
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <script src="assets/js/loaders.css.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/lightgallery-all.min.js"></script>
+    <!--Template Script-->
+    <script src="assets/js/main.js"></script>
+    
+    <script src="https://www.gstatic.com/firebasejs/5.9.4/firebase.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-app.js"></script>
+    
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+             https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-analytics.js"></script>
+    
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-auth.js"></script>
+    
+    <script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-database.js"></script>
+    
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+    
+    <script src="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.css" />
+    <script src="assets/js/firebaseAuth.js"></script>
+    <script>
+        (function () {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                        }
+
+                        form.classList.add('was-validated')
+                    }, false)
+                })
+        })();
+    </script>
+    <script src="assets/js/firebase-quo.js"></script>
+    <script src="assets/js/firebase-sub.js"></script>
+
+</body>
+
+</html>
