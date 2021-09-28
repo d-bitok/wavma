@@ -101,8 +101,8 @@ body {
 }
 
 .gallery-image-style {
-  border-top-right-radius: 0.5rem;
-  border-bottom-left-radius: 0.5rem;
+  border-top-right-radius: 12px;
+  border-bottom-left-radius: 12px;
 }
 
 .pricing-table {
@@ -181,6 +181,15 @@ a.border-mantra:focus,
 button.border-mantra:hover,
 button.border-mantra:focus {
   background-color: rgba(237, 221, 201, 0.912) !important;
+}
+
+.border-mantras {
+  border-top-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  padding: 2rem;
+  color: black;
+  backdrop-filter: blur(24px);
+  background-color: rgba(236, 198, 145, 0.34) !important;
 }
 
 .logo-brand-1 {

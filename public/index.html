@@ -44,30 +44,41 @@
                     <div></div>
                 <nav class="d-flex aic">
                         <!-- <a href="#" class="login" data-toggle="modal" data-target="#AuthModal"><i class="fa fa-user" aria-hidden="true"></i>SignIn/Out</a> -->
-                        <a href="authentication.html" class="login"><i class="fa fa-user" aria-hidden="true"></i>SignIn</a>
+                        <ul class="social mr-4 d-sm-flex">
+                            <li>
+                                <a href="authentication.html" class=" icon-hover"><i class="fa fa-user" aria-hidden="true" style="color: rgb(237, 232, 100);"></i></a>
+                            </li>
+                            <li>
+                                <a class="icon-hover " title="0791390755 / 0725777333" href="tel:+254791390755"><i class="fa fa-phone" aria-hidden="true" style="color: rgb(8, 216, 36);"></i></a>
+                            </li>
+                        </ul>
                     <ul class="nav social d-none d-md-flex">
-                        <li><a class="icon-hover" title="0791390755 / 0725777333" href="tel:+254791390755"><i class="fa fa-phone" aria-hidden="true" style="color: rgb(8, 216, 36);"></i></a></li>
-                        <li><a class="icon-hover" title="info@wavmasecurity.co.ke" href="info@wavmasecurity.co.ke"><i class="fa fa-envelope" aria-hidden="true" style="color: rgb(42, 118, 115);"></i></a></li>
+                        <!-- <li><a class="icon-hover" title="0791390755 / 0725777333" href="tel:+254791390755"><i class="fa fa-phone" aria-hidden="true" style="color: rgb(8, 216, 36);"></i></a></li> -->
+                        <li><a class="icon-hover" title="info@wavmasecurity.co.ke" href="mailto:info@wavmasecurity.co.ke"><i class="fa fa-envelope" aria-hidden="true" style="color: rgb(42, 118, 115);"></i></a></li>
                         <li><a href="https://www.facebook.com/WAVMA-Security-107395950782478/" target="_blank"><i class="fa fa-facebook" style="color: rgb(120, 120, 213);"></i></a></li>
                         <li><a href="https://www.instagram.com/wavmasecurity/"><i class="fa fa-instagram" style="color: rgb(177, 123, 131);"></i></a></li>
                         <li><a href="https://twitter.com/WavmaSecurity"><i class="fa fa-twitter" style="color: aqua;"></i></a></li>
                     </ul>
                 </nav>
             </div>
-            <nav class="navbar navbar-expand-sm navbar-light">
+            <nav class="navbar navbar-expand-sm navbar-light" style="left: -50px;">
                 <div class="group d-flex align-items-center">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse"
-                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                        aria-label="Toggle navigation"
-                        style="background-color: rgba(66, 46, 9, 0.23); border-radius: 5px;"><span
-                            class="navbar-toggler-icon my-2 mr-sm-2"></span></button>
-                    <a class="login-icon d-sm-none" href="authentication.html" style="color: rgb(125, 109, 81); padding-left: 2rem;"><i
-                            class="fa fa-user"></i></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon my-2 mr-sm-0">
+                        </span>
+                    </button>
+                    <ul class="social d-flex">
+                        <li>
+                            <a class="login-icon d-sm-none" href="authentication.html"><i class="fa fa-user" style="color: rgb(237, 232, 100);"></i></a>
+                        </li>
+                        <li>
+                            <a class="login-icon d-sm-none" title="0791390755 / 0725777333" href="tel:+254791390755"><i class="fa fa-phone" style="color: rgb(8, 216, 36);"></i></a>
+                        </li>
+                    </ul>
                 </div>
-                <a class="search-icon d-none d-md-block" href="#"><i class="fa fa-search"></i></a>
+                <a class="search-icon d-none d-md-block mt-3" href="#"><i class="fa fa-search"></i></a>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent" style="margin-top: 15px;">
                     <ul class="navbar-nav">
-
                         <li class="nav-item"><a style="color: rgb(66, 46, 9); padding-left: 1rem; padding-right: 1rem; font-weight: bold; font-size: large;"
                                 class="nav-link" href="index.html">Home</a></li>
                         <li class="nav-item"><a style="color: rgb(66, 46, 9); padding-left: 1rem; padding-right: 1rem; font-weight: bold; font-size: large;"
@@ -77,13 +88,11 @@
                         <li class="nav-item"><a style="color: rgb(66, 46, 9); padding-left: 1rem; padding-right: 1rem; font-weight: bold; font-size: large;"
                                 class="nav-link" href="contacts.html">Contacts</a></li>
                     </ul>
-                    <form class="bg-white search-form search-form-style" method="get" id="searchform">
+                    <form class="bg-white search-form search-form-style mt-4" method="get" id="searchForm" action="javascript:search();">
                         <div class="input-group">
-                            <input style="left: 1rem; border: 0;" class="field form-control" id="s" name="s" type="text"
-                                placeholder="Search">
+                            <input style="left: 1rem; border: 0;" class="field form-control" id="searchItem" name="searchItem" type="text" placeholder="Search">
                             <span class="input-group-btn">
-                                <input class="submit btn btn-warning" class="slider-carousel" id="searchsubmit"
-                                    name="submit" type="submit" value="Search">
+                                <input class="submit btn btn-warning" name="search-button" class="slider-carousel" id="searchSubmit" onclick="document.getElementById('searchForm').submit(); return false;" type="submit" value="Search">
                             </span>
                         </div>
                     </form>
@@ -145,9 +154,6 @@
                 <div class="carousel-item">
                     <img class="d-md-block w-100 img-fluid" src="assets/images/slider-6.jpg" alt="Wavma">
                 </div>
-                <!-- <div class="carousel-item">
-                    <img class="d-md-block w-100 img-fluid" src="assets/images/wavma-12.jpg" alt="Wavma">
-                </div> -->
             </div>
         
             <!-- Left and right controls -->
@@ -172,7 +178,7 @@
                     <p>You Value It? We Secure It.</p>
                 </div>
                 <div class="subscribe-btn" data-aos="fade-left" data-aos-delay="400" data-aos-offset="0">
-                    <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#QuoteModal" data-whatever="@wavma">Get a Quote</button>
+                    <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#QuoteModal" data-whatever="@wavma">Get Quote</button>
                 </div>
                 
             </div>
@@ -186,85 +192,110 @@
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="QuoteModalLabel">GET A QUOTE</h5>
+                        <h5 class="modal-title" id="QuoteModalLabel">GET QUOTE</h5>
                         <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true" style="color: brown;">&times;</span>
                         </button>
                     </div>
                     <div class="modal-body">
                         <div class="modal-alert">Your Quote Has Been Sent Successfully! If You Wish to Request Another Quote, Please Continue.</div>
-                        <form class="modal-form needs-validation" name="ModalForm" id="modalForm" novalidate>
+                        <form class="modal-form needs-validation" style="display: none;" name="ModalForm" id="modalForm" action="https://formsubmit.co/info@wavmasecurity.co.ke" method="POST" novalidate>
+                            
+                            <div class="form-group">
+                                <label for="company-name" class="col-form-label">Your company : </label>
+                                <textarea required id="company-name" name="company-name" class="form-control border-rad"></textarea>
+                            </div>
+                                
+                            <div class="modal-footer">
+                                <button class="btn btn-primary" data-dismiss="modal" type="button">Close</button>
+                                <button class="btn btn-success" type="submit">Send</button>
+                            </div>
+                        </form>
+                        <form class="modal-form needs-validation" name="ModalForm" id="modalForm"
+                            action="https://formsubmit.co/info@wavmasecurity.co.ke" method="POST" novalidate>
                             <ol>
                                 <li>
                                     <div class="form-group">
                                         <label for="sender-name" class="col-form-label">Your Name (required) : </label>
-                                        <input required type="text"  id="sender-name" class="form-control border-rad">
+                                        <input required type="text" id="sender-name" name="sender-name" class="form-control border-rad">
                                     </div>
                                 </li>
                                 <li>
                                     <div class="form-group">
                                         <label for="individual-institution" class="col-form-label">Individual or Institution </label>
-                                        <input type="text" id="individual-institution" class="form-control w-50 border-rad">
-                                        
+                                        <input type="text" id="individual-institution" name="individual-institution"
+                                            class="form-control w-50 border-rad">
                                     </div>
                                 </li>
                                 <li>
                                     <div class="form-group">
                                         <label for="sender-telephone" class="col-form-label">Telephone (required) : </label>
-                                        <input required type="tel"  id="sender-telephone" class="form-control border-rad">
+                                        <input required type="tel" id="sender-telephone" name="sender-telephone"
+                                            class="form-control border-rad">
                                     </div>
                                 </li>
                                 <li>
                                     <div class="form-group">
                                         <label for="sender-email" class="col-form-label">Email Address (required) : </label>
-                                        <input required type="email" id="sender-email" class="form-control border-rad">
+                                        <input required type="email" id="sender-email" name="sender-email" class="form-control border-rad">
                                     </div>
                                 </li>
                                 <li>
                                     <div class="form-group">
                                         <label for="sender-address" class="col-form-label">Location Address (required) : </label>
-                                        <input required type="text" id="sender-address" class="form-control border-rad">
+                                        <input required type="text" id="sender-address" name="sender-address" class="form-control border-rad">
                                     </div>
                                 </li>
                                 <li>
                                     <div class="form-group">
                                         <label for="guards-number" class="col-form-label">Number of Guards (required) : </label>
-                                        <input required type="number" id="guards-number" class="form-control w-50 border-rad">
+                                        <input required type="number" id="guards-number" name="guards-number"
+                                            class="form-control w-50 border-rad">
                                     </div>
                                     <p>Type of Contract (Specify below if not Available)</p>
                                     <div class="form-check">
                                         <label for="permanent" class="form-check-label">
                                             Permanent Guards (long-term)
                                         </label>
-                                        <input type="number" value="" id="permanent" checked class="form-control w-50 border-rad">
+                                        <input type="number" value="" id="permanent" name="permanent" checked
+                                            class="form-control w-50 border-rad">
                                     </div>
                                     <div class="form-check">
                                         <label for="events" class="form-check-label">
                                             Events (short-term)
                                         </label>
-                                        <input type="number" value="" id="events" class="form-control w-50 border-rad">
+                                        <input type="number" value="" id="events" name="events" class="form-control w-50 border-rad">
                                     </div>
                                     <div class="form-check">
                                         <label for="escort" class="form-check-label">
                                             Escort
                                         </label>
-                                        <input type="number" value="" id="escort" class="form-control w-50 border-rad">
+                                        <input type="number" value="" id="escort" name="escort" class="form-control w-50 border-rad">
                                     </div>
                                     <div class="form-check">
                                         <label for="k9" class="form-check-label">
                                             K9 (Dog Section)
                                         </label>
-                                        <input type="number" value="" id="k9" class="form-control w-50 border-rad">
+                                        <input type="number" value="" id="k9" name="k9" class="form-control w-50 border-rad">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-group">
+                                        <label for="other" class="col-form-label">
+                                            Other (i.e CCTVs, Electric Fence etc)
+                                        </label>
+                                        <textarea type="text" value="" id="other" name="other" class="form-control border-rad"></textarea>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="form-group">
                                         <label for="message-text" class="col-form-label">Your Message : </label>
-                                        <textarea required id="message-text" class="form-control border-rad"></textarea>
+                                        <textarea required id="message-text" name="message-text" class="form-control border-rad"></textarea>
                                     </div>
                                 </li>
                             </ol>
                             <div class="modal-footer">
+                                <input type="hidden" name="_next" value="https://wavma-security.web.app/index.html">
                                 <button class="btn btn-primary" data-dismiss="modal" type="button">Close</button>
                                 <button class="btn btn-success" type="submit">Send</button>
                             </div>
@@ -279,7 +310,7 @@
     <section class="services pt-3">
         <div class="parallax" style="padding: 2rem;">
         <div class="container border-mantra">
-            <div class="title text-center">
+            <div class="title text-center" data-aos="fade-up">
                 <h6>Our Mantra</h6>
                 <h1 class="title-blue">Why Choose Us</h1>
             </div>
@@ -287,7 +318,6 @@
                 <div class="row">
                     <div class="col-sm-6 col-lg-4">
                         <div class="media" data-aos="fade-up" data-aos-delay="200" data-aos-duration="400">
-                            <!-- <img class="mr-4" src="assets/images/service1.png" alt="Web Development"> -->
                             <img class="mr-4" src="assets/images/vision.svg" style="width: 3.6rem; height: 3.6rem;" alt="Web Development">
                             <div class="media-body" style="color: rgb(0, 0, 0);">
                                 <h5>OUR VISION</h5>
@@ -297,7 +327,6 @@
                     </div>
                     <div class="col-sm-6 col-lg-4">
                         <div class="media" data-aos="fade-up" data-aos-delay="400" data-aos-duration="600">
-                            <!-- <img class="mr-4" src="assets/images/service2.png" alt="Web Development"> -->
                             <img class="mr-4" src="assets/images/mission.svg" style="width: 3.6rem; height: 3.6rem;" alt="Web Development">
 
                             <div class="media-body" style="color: rgb(0, 0, 0);">
@@ -309,7 +338,6 @@
                     </div>
                     <div class="col-sm-6 col-lg-4">
                         <div class="media" data-aos="fade-up" data-aos-delay="600" data-aos-duration="800">
-                            <!-- <img class="mr-4" src="assets/images/service3.png" alt="Web Development"> -->
                             <img class="mr-4" src="assets/images/core-values.svg" style="width: 3.6rem; height: 3.6rem;" alt="Web Development">
 
                             <div class="media-body" style="color: rgb(0, 0, 0);">
@@ -405,7 +433,7 @@
             <div class="row no-gutters h-100" id="lightgallery">
                 <a class="w-50 h-50 gal-img p-1" href="assets/images/wavma-2.jpg" data-aos="fade-left" data-aos-delay="200"
                     data-aos-duration="400">
-                    <img class="img-fluid" gallery-image-style src="assets/images/wavma-2.jpg" alt="">
+                    <img class="img-fluid gallery-image-style" src="assets/images/wavma-2.jpg" alt="">
                     <i class="fa fa-caret-right"></i>
                 </a>
                 <a class="w-50 h-50 gal-img p-1" href="assets/images/wavma-4.jpg" data-aos="fade-down" data-aos-delay="200"
@@ -458,103 +486,77 @@
     </section>
     <!-- Trust End -->
     <!-- Pricing Start -->
-    <!-- <section class="pricing-table">
-        <div class="container">
-            <div class="title text-center" data-aos="fade-up">
-                <h6 class="title-primary">Our Services</h6>
-                <h1 class="title-blue">Security Services</h1>
-            </div>
-            <ul>
-                <li data-aos="fade-up">
-                    <h6>Security Officers for Commercial & Residential Properties</h6>
-                </li>
-                <li data-aos="fade-up">
-                    <h6>Event Security</h6>
-                </li>
-                <li data-aos="fade-up">
-                    <h6>Executive / VIP Protection Bodyguard & Close Protection Services</h6>
-                </li>
-                <li data-aos="fade-up">
-                    <h6>CCTV Systems</h6>
-                </li>
-                <li data-aos="fade-up">
-                    <h6>Electric Fencing</h6>
-                </li>
-                <li data-aos="fade-up">
-                    <h6>GSM Wireless Alarm Systems</h6>
-                </li>
-                <li data-aos="fade-up">
-                    <h6>Smoke & Heat Detectors</h6>
-                </li>
-                <li data-aos="fade-up">
-                    <h6>Sensor Lights</h6>
-                </li>
-                <li data-aos="fade-up">
-                    <h6>Covert Cameras</h6>
-                </li>
-            </ul>
-        </div>
-    </section> -->
-    <section class="pt-3">
-
-            <div class="parallax-pricing">
-                <div class="container">
-                    <div class="row no-gutters">
-                        <div class="col-md-4">
-                            <div class="single-pricing text-center pricing-table" data-aos="fade-up" data-aos-delay="0"
-                                data-aos-duration="600">
-                                <span>Monthly</span>
-                                <h2>Guard</h2>
-                                <p> Service Description</p>
-                                <p class="desc">
-                                </p>
-                                <!-- <p class="price">$39.00</p> -->
-                                <p>24/7 Maximum security</p>
-                                <a href="#" class="btn btn-warning">Order Now</a>
-                                <svg viewBox="0 0 170 193">
-                                    <path fill-rule="evenodd" fill="#8c560581"
-                                        d="M39.000,31.999 C39.000,31.999 -21.000,86.500 9.000,121.999 C39.000,157.500 91.000,128.500 104.000,160.999 C117.000,193.500 141.000,201.000 150.000,183.000 C159.000,165.000 172.000,99.000 167.000,87.000 C162.000,75.000 170.000,63.000 152.000,45.000 C134.000,27.000 128.000,15.999 116.000,11.000 C104.000,6.000 89.000,-0.001 89.000,-0.001 L39.000,31.999 Z" />
-                                </svg>
-                            </div>
+    <section class="pt-1">
+        <div class="parallax-pricing">
+            <div class="container pb-2">
+                <div class="row no-gutters">
+                    <div class="col-md-4 p-3">
+                        <div class="single-pricing text-center pricing-table" data-aos="fade-up" data-aos-delay="0" data-aos-duration="600">
+                            <span>Premium</span>
+                            <h2>CCTV</h2>
+                            <p> Service Description</p>
+                            <p class="desc">
+                            </p>
+                            <p>24/7 Surveillance</p>
+                            <p>Network video recorders (NVRs)</p>
+                            <p>Digital video recorders (DVRs)</p>
+                            <p>High-resolution IP cameras</p>
+                            <a  data-toggle="modal" data-target="#QuoteModal" data-whatever="@wavma" style="color: black;" class="btn btn-warning">
+                                Request
+                            </a>
+                            <svg viewBox="0 0 170 193">
+                                <path fill-rule="evenodd" fill="#fa970dee"
+                                    d="M39.000,31.999 C39.000,31.999 -21.000,86.500 9.000,121.999 C39.000,157.500 91.000,128.500 104.000,160.999 C117.000,193.500 141.000,201.000 150.000,183.000 C159.000,165.000 172.000,99.000 167.000,87.000 C162.000,75.000 170.000,63.000 152.000,45.000 C134.000,27.000 128.000,15.999 116.000,11.000 C104.000,6.000 89.000,-0.001 89.000,-0.001 L39.000,31.999 Z" />
+                            </svg>    
                         </div>
-                        <div class="col-md-4">
-                            <div class="single-pricing text-center pricing-table" data-aos="fade-up" data-aos-delay="300"
-                                data-aos-duration="600">
-                                <span>Monthly</span>
-                                <h2>CCTV</h2>
-                                <p> Service Description</p>
-                                <p class="desc">
-                                </p>
-                                <!-- <p class="price">$39.00</p> -->
-                                <p>24/7 Surveilance</p>
-                                <p>Monitoring</p>
-                                <a href="#" class="btn btn-warning">Order Now</a>
-                                <svg viewBox="0 0 170 193">
-                                    <path fill-rule="evenodd" fill="#8c560581"
-                                        d="M39.000,31.999 C39.000,31.999 -21.000,86.500 9.000,121.999 C39.000,157.500 91.000,128.500 104.000,160.999 C117.000,193.500 141.000,201.000 150.000,183.000 C159.000,165.000 172.000,99.000 167.000,87.000 C162.000,75.000 170.000,63.000 152.000,45.000 C134.000,27.000 128.000,15.999 116.000,11.000 C104.000,6.000 89.000,-0.001 89.000,-0.001 L39.000,31.999 Z" />
-                                </svg>
-                            </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="single-pricing text-center pricing-table" data-aos="fade-up" data-aos-delay="300" data-aos-duration="600">
+                            <span>Favourite</span>
+                            <h2>Guard</h2>
+                            <p> Service Description</p>
+                            <p class="desc">
+                            </p>
+                            <p>24/7 Top Security</p>
+                            <p>Values and Respect for Life & Property</p>
+                            <p>Excellent Communication Skills</p>
+                            <p>Exceptional Strength and Fitness</p>
+                            <p>Honest & Trustworthy</p>
+                            <p>Absolute Panctuality</p>
+                            <a  data-toggle="modal" data-target="#QuoteModal" data-whatever="@wavma" style="color: black;" class="btn btn-warning">
+                                Request
+                            </a>
+                            <svg viewBox="0 0 170 193">
+                                <path fill-rule="evenodd" fill="#fa970dee"
+                                    d="M39.000,31.999 C39.000,31.999 -21.000,86.500 9.000,121.999 C39.000,157.500 91.000,128.500 104.000,160.999 C117.000,193.500 141.000,201.000 150.000,183.000 C159.000,165.000 172.000,99.000 167.000,87.000 C162.000,75.000 170.000,63.000 152.000,45.000 C134.000,27.000 128.000,15.999 116.000,11.000 C104.000,6.000 89.000,-0.001 89.000,-0.001 L39.000,31.999 Z" />
+                            </svg>
                         </div>
-                        <div class="col-md-4">
-                            <div class="single-pricing text-center pricing-table" data-aos="fade-up" data-aos-delay="600"
-                                data-aos-duration="600">
-                                <span>Monthly</span>
-                                <h2>Electric Fence</h2>
-                                <p> Service Description</p>
-                                <p class="desc">
-                                </p>
-                                <!-- <p class="price">$39.00</p> -->
-                                <p>Total Surrounding</p>
-                                <a href="#" class="btn btn-warning">Order Now</a>
-                                <svg viewBox="0 0 170 193">
-                                    <path fill-rule="evenodd" fill="#8c560581"
-                                        d="M39.000,31.999 C39.000,31.999 -21.000,86.500 9.000,121.999 C39.000,157.500 91.000,128.500 104.000,160.999 C117.000,193.500 141.000,201.000 150.000,183.000 C159.000,165.000 172.000,99.000 167.000,87.000 C162.000,75.000 170.000,63.000 152.000,45.000 C134.000,27.000 128.000,15.999 116.000,11.000 C104.000,6.000 89.000,-0.001 89.000,-0.001 L39.000,31.999 Z" />
-                                </svg>
-                            </div>
+                    </div>
+                    <div class="col-md-4 p-3">
+                        <div class="single-pricing text-center pricing-table" data-aos="fade-up" data-aos-delay="600"
+                            data-aos-duration="600">
+                            <span>Premium</span>
+                            <h2>Electric Fence</h2>
+                            <p> Service Description</p>
+                            <p class="desc">
+                            </p>
+                            <p>Home Electric Fences</p>
+                            <p>Razor Wire Fences</p>
+                            <p>Flat Trap Wire Fences</p>
+                            <p>Installation</p>
+                            <p>Entire Compound Parameter</p>
+                            <a  data-toggle="modal" data-target="#QuoteModal" data-whatever="@wavma" style="color: black;" class="btn btn-warning">
+                                Request
+                            </a>
+                            <svg viewBox="0 0 170 193">
+                                <path fill-rule="evenodd" fill="#fa970dee"
+                                    d="M39.000,31.999 C39.000,31.999 -21.000,86.500 9.000,121.999 C39.000,157.500 91.000,128.500 104.000,160.999 C117.000,193.500 141.000,201.000 150.000,183.000 C159.000,165.000 172.000,99.000 167.000,87.000 C162.000,75.000 170.000,63.000 152.000,45.000 C134.000,27.000 128.000,15.999 116.000,11.000 C104.000,6.000 89.000,-0.001 89.000,-0.001 L39.000,31.999 Z" />
+                            </svg>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
     </section>
     <!-- Pricing End -->
     
@@ -622,12 +624,12 @@
                         <div class="single-widget subscribe-widget" data-aos="fade-up" data-aos-delay="800">
                             <h6 class="widget-tiltle">Subscribe</h6>
                             <p>Sign up for our mailing list to get latest updates and offers</p>
-                            <form class="subscribe-email">
+                            <form class="subscribe-email" action="https://formsubmit.co/info@wavmasecurity.co.ke" method="POST">
                                 <div class="input-group">
-                                    <input class="field form-control" name="subscribe" id="subscribeEmail" type="email"
-                                        placeholder="Email Address">
+                                    <input class="field form-control" name="new-subscriber" id="subscribeEmail" type="email" placeholder="Email Address">
+                                    <input type="hidden" name="_next" value="https://wavma-security.web.app/index.html">
                                     <span class="input-group-btn">
-                                        <button type="submit" name="submit-mail"><i class="fa fa-check"></i></button>
+                                        <button type="submit" name="_submit-mail"><i class="fa fa-check"></i></button>
                                     </span>
                                 </div>
                             </form>
@@ -637,7 +639,7 @@
                                             class="fa fa-facebook"></i></a></li>
                                 <li><a href="https://www.instagram.com/wavmasecurity/"><i class="fa fa-instagram"></i></a></li>
                                 <li><a href="https://twitter.com/WavmaSecurity"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="info@wavmasecurity.co.ke"><i class="fa fa-envelope"></i></a></li>
+                                <li><a href="mailto:info@wavmasecurity.co.ke"><i class="fa fa-envelope"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -765,43 +767,30 @@
     <script src="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.js"></script>
     <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.css" />
     <script src="assets/js/firebaseAuth.js"></script>
+
     <script>
-        (function () {
-            'use strict'
+        (
+            function () {
+                'use strict'
 
-            // Fetch all the forms we want to apply custom Bootstrap validation styles to
-            var forms = document.querySelectorAll('.needs-validation')
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.querySelectorAll('.needs-validation')
 
-            // Loop over them and prevent submission
-            Array.prototype.slice.call(forms)
-                .forEach(function (form) {
-                    form.addEventListener('submit', function (event) {
-                        if (!form.checkValidity()) {
-                            event.preventDefault()
-                            event.stopPropagation()
-                        }
+                // Loop over them and prevent submission
+                Array.prototype.slice.call(forms)
+                    .forEach(function (form) {
+                        form.addEventListener('submit', function (event) {
+                            if (!form.checkValidity()) {
+                                event.preventDefault()
+                                event.stopPropagation()
+                            }
 
-                        form.classList.add('was-validated')
-                    }, false)
-                })
-        })();
-
-
-        // $('document').ready(function () {
-        //     $('[data-login-button], [data-logout-button]').click(function(){
-        //         $('[data-login-form], [data-login-user]').toggleClass('state-hidden');
-        //         $('[data-header]').toggleClass('state-logged-in');
-        //     });
-        // });
-            // $('#QuoteModal').on('show.bs.modal', function (event) {
-            //         var button = $(event.relatedTarget) // Button that triggered the modal
-            //         var recipient = button.data('whatever') // Extract info from data-* attributes
-            //         // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
-            //         // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
-            //         var modal = $(this)
-            //         modal.find('.modal-title').text('New message to ' + recipient)
-            //         modal.find('.modal-body input').val(recipient)
-            //     })
+                            form.classList.add('was-validated')
+                        }, false)
+                    })
+            }
+        
+        )();
     </script>
 
     <script src="assets/js/firebase-sub.js"></script>

@@ -187,7 +187,7 @@ form button.btn-primary:hover {
 }
 
 .hero .slide-content span {
-  color: #cf9115;
+  color: #fa970dee;
 }
 
 .hero .slide-content h1 {
@@ -290,7 +290,7 @@ form button.btn-primary:hover {
 .cta-content {
   padding: 30px 0 90px;
   color: #fff;
-  background-color: #cf9115;
+  background-color: #fa970dee;
   position: relative;
   border-top-right-radius: 6rem;
   border-bottom-left-radius: 6rem;
@@ -338,7 +338,7 @@ form button.btn-primary:hover {
 }
 
 .title .title-primary {
-  color: #cf9115;
+  color: #fa970dee;
 }
 
 .services {
@@ -374,7 +374,7 @@ form button.btn-primary:hover {
 
 .featured .media i {
   font-size: 24px;
-  color: #cf9115;
+  color: #fa970dee;
 }
 
 .featured .media h5 {
@@ -478,15 +478,16 @@ form button.btn-primary:hover {
 
 .post-content .post-btn:hover {
   color: #fff;
-  background-color: #cf9115;
+  background-color: #fa970dee;
 }
 
 /*-----------------------------------
     1 - Trust
 ------------------------------------*/
+
 .trust {
   padding: 75px 0;
-  background-color: #6d4305e9;
+  background-color: #fa970dee;
   color: #ddd;
   position: relative;
 }
@@ -546,6 +547,8 @@ form button.btn-primary:hover {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
+  border-top-right-radius: 12px;
+  border-bottom-left-radius: 12px;
   position: absolute;
   top: 0;
   left: 0;
@@ -580,8 +583,9 @@ form button.btn-primary:hover {
 .single-pricing {
   padding: 65px 0 40px;
   margin-top: 23px;
-  color: #fff;
-  background: #d38207dc;
+  color: rgb(43, 23, 4);
+  background: #fa970da2;
+  backdrop-filter: blur(24px);
   border: 0px solid #fff;
   position: relative;
   overflow: hidden;
@@ -606,7 +610,7 @@ form button.btn-primary:hover {
 }
 
 .single-pricing .desc {
-  color: #9d9d9d;
+  color: #1c1a1a;
   padding-bottom: 30px;
   margin-bottom: 32px;
   border-bottom: 2px solid #2f2f2f;
@@ -619,7 +623,7 @@ form button.btn-primary:hover {
 }
 
 .single-pricing p {
-  color: #ddd;
+  color: rgb(255, 255, 255);
 }
 
 .single-pricing p:last-of-type {
@@ -664,7 +668,7 @@ form button.btn-primary:hover {
     1 - Testimonials
 ------------------------------------*/
 .testimonial-and-clients {
-  /* background: url(../images/12.jpeg) center center/cover no-repeat #cf9115; */
+  /* background: url(../images/12.jpeg) center center/cover no-repeat #fa970dee; */
   opacity: 0.5;
 }
 
@@ -782,7 +786,7 @@ footer {
 }
 
 .single-widget i {
-  color: #cf9115;
+  color: #fa970dee;
 }
 
 .single-widget h6 {
@@ -859,7 +863,7 @@ span {
 .tags-widget a:hover {
   text-decoration: none;
   color: #26264b;
-  background-color: #cf9115;
+  background-color: #fa970dee;
 }
 
 .subscribe-widget form {
@@ -882,7 +886,7 @@ span {
 }
 
 .subscribe-widget button {
-  background: #cf9115;
+  background: #fa970dee;
   border: none;
   padding: 9px 14px;
   border-top-right-radius: 10px;
@@ -919,7 +923,7 @@ span {
 }
 
 .subscribe-widget .social-nav a:hover {
-  background-color: #cf9115;
+  background-color: #fa970dee;
 }
 
 /*-----------------------------------
@@ -927,7 +931,7 @@ span {
 ------------------------------------*/
 .foot-note {
   padding: 35px 0;
-  background-color: #cf9115;
+  background-color: #fa970dee;
   color: #26264b;
 }
 

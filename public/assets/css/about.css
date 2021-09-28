@@ -104,7 +104,7 @@ body {
 }
 .parallax {
   /* The image used */
-  background-image: url("assets/images/wavma-6.jpg");
+  background-image: url("../images/wavma-6.jpg");
 
   /* Set a specific height */
   min-height: 500px;
@@ -118,7 +118,7 @@ body {
 }
 .parallax-road {
   /* The image used */
-  background-image: url("assets/images/security.webp");
+  background-image: url("../images/security.webp");
 
   /* Set a specific height */
   min-height: 500px;

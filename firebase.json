@@ -2,10 +2,41 @@
   "hosting": {
     "site": "wavma-security",
     "public": "public",
+    "cleanUrls": true,
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
-    ]
+    ],
+    "redirects": [
+      
+      {
+        "source": "/about/",
+        "destination": "/about",
+        "type": 302
+      },
+      {
+        "source": "/services/",
+        "destination": "/services",
+        "type": 302
+      },
+      {
+        "source": "/contacts/",
+        "destination": "/contacts",
+        "type": 302
+      },
+      {
+        "source": "/authentication/",
+        "destination": "/authentication",
+        "type": 302
+      },
+      {
+        "source": "/404/",
+        "destination": "/404",
+        "type": 302
+      }
+  ]
   }
 }
+
+

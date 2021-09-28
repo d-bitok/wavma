@@ -86,16 +86,16 @@ body {
   border: 0;
 }
 
-.parallax {
+.parallax-services {
   /* The image used */
-  background-image: url("assets/images/10.jpeg");
+  /* background-image: url("../images/wavma-12.jpg"); */
 
   /* Set a specific height */
   min-height: 500px;
   /* margin-bottom: 24rem; */
 
   /* Create the parallax scrolling effect */
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -103,7 +103,7 @@ body {
 
 .parallax-road {
   /* The image used */
-  background-image: url("assets/images/15.jpeg");
+  background-image: url("../images/15.jpeg");
 
   /* Set a specific height */
   min-height: 500px;

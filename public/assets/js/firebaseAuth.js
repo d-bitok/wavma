@@ -1,7 +1,7 @@
-// 1) Create a new firebaseui.auth instance stored to our local variable ui
+// 1) Firebaseui.auth instance stored to our local variable ui
 const ui = new firebaseui.auth.AuthUI(firebase.auth());
 
-// 2) These are our configurations.
+// 2) Configurations.
 const uiConfig = {
   callbacks: {
     signInSuccessWithAuthResult(authResult, redirectUrl) {
@@ -60,7 +60,7 @@ const uiConfig = {
   ],
 };
 
-// 3) Call the 'start' method on our ui class
+// 3) The 'start' method on our ui class
 // including our configuration options.
 
 ui.start("#firebaseui-auth-container", uiConfig);
@@ -72,5 +72,3 @@ ui.start("#firebaseui-auth-container", uiConfig);
 // if (firebase.auth().isSignInWithEmailLink(window.location.href)) {
 //   ui.start('#firebaseui-auth-container', uiConfig);
 // }
-
-// function S

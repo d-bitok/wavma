@@ -30,6 +30,7 @@ function submitForm(e) {
     var events = getInputVal('events');
     var escort = getInputVal('escort');
     var k9 = getInputVal('k9');
+    var other = getInputVal('other');
     var messageText = getInputVal('message-text');
 
     saveQuote(
@@ -43,6 +44,7 @@ function submitForm(e) {
         events,
         escort,
         k9,
+        other,
         messageText,
     );
 
@@ -71,6 +73,7 @@ function saveQuote(
     events,
     escort,
     k9,
+    other,
     messageText,
 
 ){
@@ -86,6 +89,7 @@ function saveQuote(
         events: events,
         escort: escort,
         k9: k9,
+        other: other,
         messageText: messageText, 
     });
 }

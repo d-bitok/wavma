@@ -42,9 +42,19 @@ body {
 .iframe-container {
   position: relative;
   overflow: hidden;
-  width: 100%;
   padding-top: 56.25%;
-  top: 5rem;
+  top: -20px;
+  height: 500px;
+  width: auto;
+  left: -25px;
+  right: -35px;
+}
+
+.find-us {
+  background-color: rgba(236, 133, 22, 0.471);
+  padding: 3rem;
+  border-top-right-radius: 6rem;
+  border-bottom-left-radius: 6rem;
 }
 
 .iframe-body {
@@ -96,7 +106,7 @@ button.border-rad:focus {
 
 .parallax {
   /* The image used */
-  background-image: url("assets/images/19.jpeg");
+  background-image: url("../images/19.jpeg");
 
   /* Set a specific height */
   min-height: 500px;
@@ -107,4 +117,13 @@ button.border-rad:focus {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.map-style {
+  top: -8rem;
+  background-color: rgba(130, 88, 12, 0.471);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-top-right-radius: 2rem;
+  border-bottom-left-radius: 2rem;
 }

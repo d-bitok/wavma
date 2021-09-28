@@ -51,6 +51,12 @@ const firebaseConfig = {
     measurementId: "G-G6WSXLJNWD"
 };
 
+const messaging = getMessaging(firebaseConfig);
+messaging.getToken({vapidKey: "BAhUE5eKqcT0mw3w10e1HGXojpW7W-1qhRfjbktS4HsEYSiMoPXY_whuuuo96qp8CYGiSL9qiAhfQ4Lk40fiQDU"});
+// onMessage(messaging, (payload) => {
+//   console.log('Message received. ', payload);
+// });
+
 function firebasePush(input) {
     if (!firebase.apps.length) {
         firebase.initializeApp(firebaseConfig);
