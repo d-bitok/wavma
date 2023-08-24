@@ -1,7 +1,7 @@
 {
   "hosting": {
     "site": "wavma-security",
-    "public": "public",
+    "public": "404",
     "cleanUrls": true,
     "ignore": [
       "firebase.json",
