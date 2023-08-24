@@ -1,0 +1,128 @@
+a {
+  color: rgb(167, 87, 12);
+}
+
+.btn ::after {
+  background-color: rgb(196, 110, 12);
+}
+
+button:focus {
+  outline: none;
+  outline: 0px;
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.ftr-small {
+  /* background-size: contain; */
+  background-color: rgba(0, 0, 0, 0.276);
+  border-top-right-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  /* padding-left: 3rem; */
+  width: "100%";
+  height: "100%";
+}
+
+.ftr-big {
+  background-size: contain;
+  background-color: rgba(0, 0, 0, 0.276);
+  border-top-right-radius: 24%;
+  border-bottom-left-radius: 24%;
+  padding: 3rem;
+  position: absolute;
+  /* width: auto; */
+  /* height: 30rem; */
+  /* left: 1rem; */
+}
+
+.iframe-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 70.25%;
+  top: 5rem;
+}
+
+.badge-bg {
+  background-color: rgba(185, 110, 12, 0.554);
+  border-top-right-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+}
+
+.iframe-body {
+  border: 0;
+  border-top-right-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  /* padding: 3rem;
+    align-items: center;
+    background-size: contain;
+    justify-content: center;
+    margin-left: -4rem; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.slider-carousel {
+  border-top-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  /* margin-top: 10rem; */
+  /* background-size: cover; */
+  width: "100%";
+  height: "100%";
+}
+
+.search-form-style {
+  border-top-right-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  border: 0;
+}
+
+.parallax-services {
+  /* The image used */
+  /* background-image: url("../images/wavma-12.jpg"); */
+
+  /* Set a specific height */
+  min-height: 500px;
+  /* margin-bottom: 24rem; */
+
+  /* Create the parallax scrolling effect */
+  /* background-attachment: fixed; */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax-road {
+  /* The image used */
+  background-image: url("../images/15.jpeg");
+
+  /* Set a specific height */
+  min-height: 500px;
+  /* margin-bottom: 24rem; */
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.mantra-body {
+  background-color: rgba(185, 110, 12, 0.857);
+  color: aliceblue;
+  height: 250px;
+  padding: 2rem;
+  border-top-right-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  align-items: center;
+  justify-content: center;
+}
